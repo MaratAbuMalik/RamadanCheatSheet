@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_menu">
+    <!--
+    <item android:id="@+id/donate_settings"
+        android:title="@string/donate_settings"
+        android:orderInCategory="1"
+        app:showAsAction="never"/>
+    <item android:id="@+id/rate_app"
+        android:title="@string/rate_app"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
+    <item android:id="@+id/share_settings"
+        android:title="@string/share_settings"
+        android:orderInCategory="3"
+        app:showAsAction="never" />
+    -->
+    <item android:id="@+id/feedback_settings"
+        android:title="@string/feedback_settings"
+        android:orderInCategory="4"
+        app:showAsAction="never" />
+</menu>

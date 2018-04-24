@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ScrollLayoutStyle"
+    tools:context="com.maratabumalik.ramadancheatsheet.ListActivity"
+    android:id="@+id/activity_list">
+
+    <ListView
+        android:id="@+id/headList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>
