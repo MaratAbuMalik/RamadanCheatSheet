@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/ScrollLayoutStyle"
-    tools:context="com.maratabumalik.ramadancheatsheet.com.maratabumalik.proramadan.TextActivity"
+    tools:context="com.maratabumalik.proramadan.TextActivity"
     android:id="@+id/activity_text">
 
     <TextView
