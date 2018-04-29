@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.maratabumalik.ramadancheatsheet.R;
 
@@ -41,6 +42,8 @@ public class ListActivity extends MenuActivity {
             ListView headList = (ListView) findViewById(R.id.headList);
             sections = section.getJSONArray("sections");
 
+            setTitle(section.getString("name"));
+
             String[] listItemArray = new String[sections.length()];
             for (int i = 0; i < sections.length(); i++) {
                 listItemArray[i] = (i + 1) + ". " + sections.getJSONObject(i).getString("name");
@@ -69,6 +72,7 @@ public class ListActivity extends MenuActivity {
                 else {
                     Intent intent = new Intent(view.getContext(), TextActivity.class);
                     intent.putExtra("headIndex", sections.getJSONObject(position).getInt("textNum"));
+                    intent.putExtra("head", sections.getJSONObject(position).getString("name"));
                     startActivity(intent);
                 }
             } catch (JSONException e) {

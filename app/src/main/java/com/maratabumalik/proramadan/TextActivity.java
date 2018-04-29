@@ -16,6 +16,8 @@ public class TextActivity extends MenuActivity {
         Resources res = getResources();
         Intent intent = getIntent();
 
+        setTitle(intent.getStringExtra("head"));
+
         int headIndex = intent.getIntExtra("headIndex", 0);
         String[] textArray = res.getStringArray(R.array.textArray);
 
