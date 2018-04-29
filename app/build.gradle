@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion "25.0.0"
     defaultConfig {
-        applicationId "com.maratabumalik.ramadancheatsheet"
+        applicationId "com.maratabumalik.proramadan"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1

@@ -1,4 +1,4 @@
-package com.maratabumalik.ramadancheatsheet;
+package com.maratabumalik.proramadan;
 
 import android.text.Html;
 import android.text.Spanned;

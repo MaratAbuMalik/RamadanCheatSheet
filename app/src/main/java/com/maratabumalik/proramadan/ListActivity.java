@@ -1,4 +1,4 @@
-package com.maratabumalik.ramadancheatsheet;
+package com.maratabumalik.proramadan;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.maratabumalik.ramadancheatsheet.R;
 
 import org.json.JSONObject;
 import org.json.JSONArray;

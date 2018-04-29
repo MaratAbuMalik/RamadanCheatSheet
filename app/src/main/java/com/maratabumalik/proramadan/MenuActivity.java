@@ -1,4 +1,4 @@
-package com.maratabumalik.ramadancheatsheet;
+package com.maratabumalik.proramadan;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.maratabumalik.ramadancheatsheet.BuildConfig;
+import com.maratabumalik.ramadancheatsheet.R;
 
 import java.util.Locale;
 

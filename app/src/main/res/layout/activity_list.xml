@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/ScrollLayoutStyle"
-    tools:context="com.maratabumalik.ramadancheatsheet.ListActivity"
+    tools:context="com.maratabumalik.ramadancheatsheet.com.maratabumalik.proramadan.ListActivity"
     android:id="@+id/activity_list">
 
     <ListView

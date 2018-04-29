@@ -13,16 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ListActivity">
+        <activity android:name="com.maratabumalik.proramadan.ListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".TextActivity" />
-        <activity android:name=".BillingActivity" />
+        <activity android:name="com.maratabumalik.proramadan.MenuActivity" />
+        <activity android:name="com.maratabumalik.proramadan.TextActivity" />
+        <activity android:name="com.maratabumalik.proramadan.BillingActivity" />
     </application>
 
 </manifest>

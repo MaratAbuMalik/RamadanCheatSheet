@@ -1,9 +1,11 @@
-package com.maratabumalik.ramadancheatsheet;
+package com.maratabumalik.proramadan;
 
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.maratabumalik.ramadancheatsheet.R;
 
 public class TextActivity extends MenuActivity {
     @Override

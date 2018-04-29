@@ -1,4 +1,4 @@
-package com.maratabumalik.ramadancheatsheet;
+package com.maratabumalik.proramadan;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.example.android.trivialdrivesample.util.IabHelper;
 import com.example.android.trivialdrivesample.util.IabResult;
 import com.example.android.trivialdrivesample.util.Purchase;
+import com.maratabumalik.ramadancheatsheet.R;
 
 public class BillingActivity extends MenuActivity {
     // Экземпляр класса для работы с магазином

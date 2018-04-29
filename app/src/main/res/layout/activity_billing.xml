@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/basicLayoutStyle"
-    tools:context="com.maratabumalik.ramadancheatsheet.BillingActivity"
+    tools:context="com.maratabumalik.ramadancheatsheet.com.maratabumalik.proramadan.BillingActivity"
     android:id="@+id/activity_billing">
 
     <Space
