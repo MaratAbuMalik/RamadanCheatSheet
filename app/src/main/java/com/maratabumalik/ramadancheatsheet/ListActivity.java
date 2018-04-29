@@ -1,7 +1,6 @@
 package com.maratabumalik.ramadancheatsheet;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -24,7 +23,6 @@ public class ListActivity extends MenuActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-        Resources res = getResources();
 
         Intent intent = getIntent();
         String sectionJsonString = intent.getStringExtra("sectionJsonString");
@@ -63,7 +61,7 @@ public class ListActivity extends MenuActivity {
             try {
                 if (sections.getJSONObject(position).getInt("textNum") == 0){
                     Intent intent = new Intent(view.getContext(), ListActivity.class);
-                    intent.putExtra("sectionJson", sections.getJSONObject(position).toString());
+                    intent.putExtra("sectionJsonString", sections.getJSONObject(position).toString());
                     startActivity(intent);
                 }
                 else {
