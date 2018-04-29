@@ -1,0 +1,68 @@
+{
+    "name": "Ramadan",
+    "sections": [
+        {
+            "name": "Chapter 1",
+            "sections": [],
+            "textNum": 1
+        },
+        {
+            "name": "Chapter 2",
+            "sections": [
+                {
+                    "name": "Chapter 2.1",
+                    "sections": [],
+                    "textNum": 2
+                },
+                {
+                    "name": "Chapter 2.2",
+                    "sections": [],
+                    "textNum": 3
+                },
+                {
+                    "name": "Chapter 2.3",
+                    "sections": [],
+                    "textNum": 4
+                },
+                {
+                    "name": "Chapter 2.4",
+                    "sections": [
+                        {
+                            "name": "Chapter 2.4.1",
+                            "sections": [],
+                            "textNum": 5
+                        },
+                        {
+                            "name": "Chapter 2.4.2",
+                            "sections": [],
+                            "textNum": 6
+                        },
+                        {
+                            "name": "Chapter 2.4.3",
+                            "sections": [],
+                            "textNum": 7
+                        }
+                    ],
+                    "textNum": 0
+                }
+            ],
+            "textNum": 0
+        },
+        {
+            "name": "Chapter 3",
+            "sections": [],
+            "textNum": 8
+        },
+        {
+            "name": "Chapter 4",
+            "sections": [],
+            "textNum": 9
+        },
+        {
+            "name": "Chapter 5",
+            "sections": [],
+            "textNum": 10
+        }
+    ],
+    "textNum": 0
+}

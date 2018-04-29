@@ -15,7 +15,7 @@ public class TextActivity extends MenuActivity {
         Intent intent = getIntent();
 
         int headIndex = intent.getIntExtra("headIndex", 0);
-        String[] textArray = res.getStringArray(R.array.uniqueEvidenceArray);
+        String[] textArray = res.getStringArray(R.array.textArray);
 
         TextView textView = (TextView) findViewById(R.id.textView);
         textView.setText(AntiDeprecation.fromHtml(textArray[headIndex]));
