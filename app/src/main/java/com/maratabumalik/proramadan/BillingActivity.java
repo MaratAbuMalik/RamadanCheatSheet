@@ -28,7 +28,7 @@ public class BillingActivity extends MenuActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_billing);
 
-        String base64EncodedPublicKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArNycbnBYT+xbcSf4eFfD5iLXjTgoUESqr/NR+HgoqVdYy/IqPHwvucFJBpJPelIlEMk2HiyC4aeoOxmrRYg3kb6eksJyX8xQuUmLz5Vvq8+RUcnm7P9Q+aX8O1Hnmw0hohj5KNQeUQK5tSagqtS3mQaid41LyVYJb7uTTSqnd3rYzmnlmUjgduB64Ycln/d6XlZ7i4wMlnzjHcIPjF7Z4gA5u5Xask5QMYFMoDrk4x8e6mdKbpuQfP2HURtiyhplLzfl6H7v36hf2YwQ5JXErj30x1wz4/XBwDZ512TF6CxpCNLYJbLvhY8Z+YaDIijUTMRTcy3lrMHc8RO3RSjR2QIDAQAB";
+        String base64EncodedPublicKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA23SqqBYKB5nWH0Sb39RV7Eo0iFK6fD/hgxYvDr8tgwX/bVubTyHxmqbTmNbE2yC84DlRR+020x8lp4ENWkeD8eOim2cLDwVmKEmSNTJuVvFLHDWdI78EtPdKpAKCQpU179Sshoy9Hz5A4768DHNANzpw18Nfp2F/cjFglwj28bh20KgIHQWB89xBCOqV+BbdmVIJ52nk1zQNwxLvxcl4pXHVtizrRtb1LffVHv4n07ASJ3m1JMJdqWtpCUQOlkQmoFxtfhk60GCDHMMQlgQ+0FgIPTss6IqbN8geFozqF9gAxZzXheu72X5jIXYRAiGjDfA5gvW2GoaWVMZXWIXUPQIDAQAB";
         mHelper = new IabHelper(this, base64EncodedPublicKey);
         mHelper.enableDebugLogging(false);
         mHelper.startSetup(new IabHelper.OnIabSetupFinishedListener() {

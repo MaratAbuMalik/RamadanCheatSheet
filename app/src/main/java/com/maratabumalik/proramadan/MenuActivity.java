@@ -44,12 +44,12 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent;
         // Операции для выбранного пункта меню
         switch (id) {
-            /*
+
             case R.id.donate_settings:
                 intent = new Intent(getApplication().getApplicationContext(), BillingActivity.class);
                 startActivity(intent);
                 return true;
-                */
+
             case R.id.rate_app:
                 Intent rateIntent = new Intent(Intent.ACTION_VIEW);
                 rateIntent.setData(Uri.parse("market://details?id=com.maratabumalik.proramadan"));
