@@ -81,6 +81,11 @@ public class MenuActivity extends AppCompatActivity {
                 feedbackIntent.setData(feedbackData);
                 startActivity(feedbackIntent);
                 return true;
+
+            case R.id.other_apps:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.developer_url))));
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }

@@ -7,7 +7,6 @@
         android:title="@string/donate_settings"
         android:orderInCategory="1"
         app:showAsAction="never"/>
-
     <item android:id="@+id/rate_app"
         android:title="@string/rate_app"
         android:orderInCategory="2"
@@ -20,4 +19,8 @@
         android:title="@string/feedback_settings"
         android:orderInCategory="4"
         app:showAsAction="never" />
+    <item android:id="@+id/other_apps"
+        android:title="@string/other_apps"
+        android:orderInCategory="5"
+        app:showAsAction="never"/>
 </menu>
