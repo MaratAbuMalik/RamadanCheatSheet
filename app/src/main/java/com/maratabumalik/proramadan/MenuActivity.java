@@ -49,9 +49,10 @@ public class MenuActivity extends AppCompatActivity {
                 intent = new Intent(getApplication().getApplicationContext(), BillingActivity.class);
                 startActivity(intent);
                 return true;
+                */
             case R.id.rate_app:
                 Intent rateIntent = new Intent(Intent.ACTION_VIEW);
-                rateIntent.setData(Uri.parse("market://details?id=com.maratabumalik.imanqa"));
+                rateIntent.setData(Uri.parse("market://details?id=com.maratabumalik.proramadan"));
                 if (!isActivityStarted(rateIntent)) {
                     rateIntent.setData(Uri.parse(getString(R.string.play_market_url)));
                     if (!isActivityStarted(rateIntent)) {
@@ -68,7 +69,7 @@ public class MenuActivity extends AppCompatActivity {
                 shareIntent.setType("text/plain");
                 startActivity(shareIntent);
                 return true;
-            */
+
             case R.id.feedback_settings:
                 Intent feedbackIntent = new Intent(Intent.ACTION_VIEW);
                 Uri feedbackData = Uri.parse("mailto:MaratAbuMalik@gmail.com?subject=" +

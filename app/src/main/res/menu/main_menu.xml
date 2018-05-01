@@ -7,6 +7,7 @@
         android:title="@string/donate_settings"
         android:orderInCategory="1"
         app:showAsAction="never"/>
+       -->
     <item android:id="@+id/rate_app"
         android:title="@string/rate_app"
         android:orderInCategory="2"
@@ -15,7 +16,6 @@
         android:title="@string/share_settings"
         android:orderInCategory="3"
         app:showAsAction="never" />
-    -->
     <item android:id="@+id/feedback_settings"
         android:title="@string/feedback_settings"
         android:orderInCategory="4"
