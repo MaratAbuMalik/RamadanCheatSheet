@@ -2,18 +2,27 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/WindowsAnimationTransition</item>
+    </style>
+
+    <!-- Light base activity theme -->
+    <style name="ThemeLight" parent="AppTheme">
         <item name="android:textColor">@color/colorText</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Dark base activity theme -->
+    <style name="ThemeDark" parent="AppTheme">
+        <item name="android:textColor">@color/colorTextNight</item>
+        <item name="android:colorBackground">@color/colorBackgroundNight</item>
+        <item name="colorAccent">@color/colorAccentNight</item>
     </style>
 
     <style name="basicTextStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/colorText</item>
     </style>
 
     <style name="headStyle" parent="basicTextStyle">
@@ -55,23 +64,9 @@
         <item name="android:gravity">center_horizontal</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
-    <style name="FullscreenTheme" parent="AppTheme">
-        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
-        <item name="android:windowActionBarOverlay">true</item>
-        <item name="android:windowBackground">@null</item>
-    </style>
-
-    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
-        <item name="android:background">@color/black_overlay</item>
+    <style name="WindowsAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
 
 </resources>

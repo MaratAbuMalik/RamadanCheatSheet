@@ -10,6 +10,7 @@
     <string name="share_settings">Рассказать друзьям</string>
     <string name="feedback_settings">Обратная связь</string>
     <string name="other_apps">Другие приложения</string>
+    <string name="night_mode">Ночной режим</string>
 
     <string name="no_play_market">Не удается открыть Play Маркет. Проверьте, установлен ли Маркет на вашем устройстве. Попробуйте позже.</string>
     <string name="share_text">Рекомендую скачать приложение с разбором основных вопросов о месяце Рамадан</string>

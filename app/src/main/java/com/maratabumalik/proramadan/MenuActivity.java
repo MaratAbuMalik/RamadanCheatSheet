@@ -6,6 +6,10 @@ import android.net.Uri;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatDelegate;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -17,8 +21,17 @@ import java.util.Locale;
 
 public class MenuActivity extends AppCompatActivity {
 
+    Menu optionsMenu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        if(AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES){
+            setTheme(R.style.ThemeDark);
+        }
+        else{
+            setTheme(R.style.ThemeLight);
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
     }
@@ -33,8 +46,25 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        for (int i=0; i<menu.size(); i++) {
+            MenuItem mi = menu.getItem(i);
+            String title = mi.getTitle().toString();
+            Spannable newTitle = new SpannableString(title);
+            newTitle.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.colorText)), 0, newTitle.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            mi.setTitle(newTitle);
+        }
+        MenuItem nightModeItem = optionsMenu.findItem(R.id.night_mode);
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES){
+            nightModeItem.setChecked(true);
+        }
+        return true;
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
+        optionsMenu = menu;
         return true;
     }
 
@@ -86,8 +116,25 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.developer_url))));
                 return true;
 
+            case R.id.night_mode:
+                item.setChecked(!item.isChecked());
+                if(item.isChecked()){
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                }
+                else{
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                }
+                restartApp();
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void restartApp(){
+        Intent i = getIntent();
+        finish();
+        startActivity(i);
     }
 }

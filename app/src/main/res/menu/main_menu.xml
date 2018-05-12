@@ -23,4 +23,9 @@
         android:title="@string/other_apps"
         android:orderInCategory="5"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/night_mode"
+        android:checkable="true"
+        android:title="@string/night_mode"
+        android:orderInCategory="6"/>
 </menu>
